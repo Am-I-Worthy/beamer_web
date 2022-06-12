@@ -20,7 +20,8 @@ class Products extends StatelessWidget {
                 Beamer.of(context).beamToNamed('/products/product1');
                 print(Beamer.of(context)
                     .beamingHistory
-                    .map((e) => e.history.map((val) => val.routeInformation.location))
+                    .map((e) => e.history.map(
+                      (val) => val.routeInformation.location))
                     .toList());
               },
               child: const Text('Product 1'),
@@ -30,7 +31,8 @@ class Products extends StatelessWidget {
                 context.beamToNamed('/products/product2');
                 print(Beamer.of(context)
                     .beamingHistory
-                    .map((e) => e.history.map((val) => val.routeInformation.location))
+                    .map((e) => e.history.map(
+                      (val) => val.routeInformation.location))
                     .toList());
               },
               child: const Text('Product 2'),

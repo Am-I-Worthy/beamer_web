@@ -17,14 +17,18 @@ class Product extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {
+                // to Pop all the routes and push Profile page
                 Beamer.of(context).popToNamed('/profile');
 
+                // Second way to pop all the routes
+                // and push a single page
                 // Beamer.of(context).popRoute();
 
                 print(Beamer.of(context)
                     .beamingHistory
                     .map((e) =>
-                        e.history.map((val) => val.routeInformation.location))
+                        e.history.map(
+                          (val) => val.routeInformation.location))
                     .toList());
               },
               child: const Text(

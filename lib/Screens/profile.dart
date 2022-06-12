@@ -18,12 +18,18 @@ class Profile extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {
+                // To beam back to the page that is
+                // available in the Beamer Navigation Stack
                 Beamer.of(context).beamBack();
+
+                // to show the Beamer History
+                // for Debugging...
                 print(Beamer.of(context)
                     .beamingHistory
                     .map((e) => e.history[0].routeInformation.location)
                     .toList());
 
+                // Second way to call Beamer Functions
                 // context.beamBack();
               },
               child: const Text(

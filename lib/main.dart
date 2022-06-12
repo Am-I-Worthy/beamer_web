@@ -52,7 +52,7 @@ class _MyAppState extends State<MyApp> {
 
 
 /// Things to Learn
-/// 1. UnderStanding Boiler plate code and things needed to get Started. 
+/// 1. UnderStanding Boiler plate code and get Started. 
 ///    1.1 Understanding Code Structure
 /// 2. beamToNamed() function
 /// 3. beamBack() function
